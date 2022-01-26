@@ -26,29 +26,30 @@ module "mercwri" {
   account_customizations_name = "sandbox"
 }
 
-# module "sb2" {
-#   source = "./modules/aft-account-request"
-#   control_tower_parameters = {
-#     AccountEmail              = "mercwri@gmail.com"
-#     AccountName               = "sbx2"
-#     ManagedOrganizationalUnit = "AFTLearn"
-#     SSOUserEmail              = "mercwri@gmail.com "
-#     SSOUserFirstName          = "Sandbox"
-#     SSOUserLastName           = "AFT"
-#   }
+module "mercwri2" {
+  source = "./modules/aft-account-request"
 
-#   account_tags = {
-#     "Learn Tutorial" = "AFT"
-#   }
+  control_tower_parameters = {
+    AccountEmail              = "mercwri+sbx2@gmail.com"
+    AccountName               = "mercwri2"
+    ManagedOrganizationalUnit = "Sandbox"
+    SSOUserEmail              = "mercwri+sbx2@gmail.com "
+    SSOUserFirstName          = "mw"
+    SSOUserLastName           = "mw"
+  }
 
-#   change_management_parameters = {
-#     change_requested_by = "HashiCorp Learn"
-#     change_reason       = "Learn AWS Control Tower Account Factory for Terraform A"
-#   }
+  account_tags = {
+    "Learn Tutorial" = "AFT"
+  }
 
-#   custom_fields = {
-#     group = "non-prod"
-#   }
+  change_management_parameters = {
+    change_requested_by = "HashiCorp Learn"
+    change_reason       = "Learn AWS Control Tower Account Factory for Terraform B"
+  }
 
-#   account_customizations_name = "sandbox"
-# }
+  custom_fields = {
+    group = "non-prod"
+  }
+
+  account_customizations_name = "sandbox"
+}
