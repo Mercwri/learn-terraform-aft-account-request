@@ -4,10 +4,10 @@ module "mercwri" {
   control_tower_parameters = {
     AccountEmail              = "mercwri+test@gmail.com"
     AccountName               = "mercwrisbx"
-    ManagedOrganizationalUnit = "AFTLearn"
+    ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "mercwri+test@gmail.com "
-    SSOUserFirstName          = "mercwri"
-    SSOUserLastName           = "mercwri"
+    SSOUserFirstName          = "mw"
+    SSOUserLastName           = "mw"
   }
 
   account_tags = {
