@@ -6,8 +6,8 @@ module "mercwri" {
     AccountName               = "mercwrisbx"
     ManagedOrganizationalUnit = "AFTLearn"
     SSOUserEmail              = "mercwri+test@gmail.com "
-    SSOUserFirstName          = "mw"
-    SSOUserLastName           = "mw"
+    SSOUserFirstName          = "mercwri"
+    SSOUserLastName           = "mercwri"
   }
 
   account_tags = {
